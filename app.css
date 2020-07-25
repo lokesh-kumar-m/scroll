@@ -1,0 +1,115 @@
+body {
+    background: #ebecf1;
+    font-family: "Nunito", sans-serif;
+}
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+.navbar.scrolled {
+    background-color: #b1beec;
+    transition: all 500ms;
+}
+.home{
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:45rem;
+}
+.scrolldwn{
+  margin:6rem 4rem;
+  color:orangered;
+}
+.second{
+  margin: 6rem 3.5rem;
+  height: 20rem;
+  position: relative;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.4rem;
+  overflow:hidden;
+}
+.card{
+  height: 20rem;
+  width: 20rem;
+  margin:auto;
+  position: absolute;
+  box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all .7s ease-in-out;
+    overflow: hidden;
+}
+.card:hover{
+  box-shadow: 12px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+}
+.card img{
+  width: 100%;
+  height: 100%;
+}
+.card:first-child{
+  left:24%;
+}
+.card:last-child{
+  left:54%;
+}
+.blurb{
+  opacity: 0;
+  position: relative;
+  margin: 6rem 5rem;
+  transition: 1s cubic-bezier(0.64, 0.02, 0.58, 1);
+}
+.blurb h2 {
+   color: #EA1C2C;
+   font-weight: 500;
+   font-size: 3.5rem;
+}
+.blurb p {
+    color: #2228b8;
+    font-weight: 100;
+    font-size: 2.125rem;
+    line-height: 2;
+}
+.content {
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+.blur{
+  animation: fade 2s cubic-bezier(0.64, 0.02, 0.58, 1) 1 forwards;
+}
+ @keyframes fade {
+   0%{
+     opacity: 0;
+   }
+   100%{
+     opacity: 1;
+   }
+ }
+.l {
+  margin-bottom: 7.6rem;
+}
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
